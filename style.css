@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+}
+
+.logo {
+  display: flex;
+  width: 10%;
+}
+.menu {
+  display: flex;
+  width: 55%;
+}
+.menu ul {
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  padding: 10px;
+}
+.menu ul li a:hover {
+  background-color: #58a9a5;
+  border-radius: 5px;
+  color: white;
+  transition: 0.3s;
+}
+.login-button {
+  display: flex;
+  width: 15%;
+}
+.login-button button {
+  width: 100%;
+  border: none;
+  background-color: #58a9a5;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  height: 70vh;
+  /* background-color: coral; */
+  margin: 20px auto;
+  justify-content: space-between;
+}
+
+.card-text {
+  width: 390px;
+  height: 300px;
+  background-color: white;
+  margin: 10px auto;
+  text-align: center;
+  /* border: 1px solid rgb(230, 227, 227); */
+}
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px 15px;
+}
+.text {
+  line-height: 28px;
+  margin: 20px 15px;
+}
+.link {
+  display: flex;
+  justify-content: center;
+}
+.link button {
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #58a9a5;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 35px;
+}
+.card-image {
+  width: 390px;
+  height: 300px;
+  margin: 10px auto;
+}
+.image {
+  width: 100%;
+  height: 100%;
+}
+.card-image img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .content {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .card-text {
+    width: 450px;
+    height: 350px;
+    font-size: 20px;
+    margin-right: 10px;
+    text-align: left;
+  }
+  .card-image {
+    width: 450px;
+    height: 350px;
+  }
+  .title {
+    font-size: 37px;
+    margin-top: 0;
+  }
+  .text {
+    line-height: 35px;
+  }
+  .link {
+    justify-content: left;
+    margin-left: 15px;
+  }
+  .menu ul li a {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .content {
+    justify-content: center;
+  }
+  .card-text {
+    width: 650px;
+    height: 400px;
+  }
+  .card-image {
+    width: 650px;
+    height: 400px;
+  }
+  .title {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .text {
+    line-height: 43px;
+  }
+  .link {
+    margin-top: 80px;
+  }
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+}
+.wrapper {
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+}
+.contact-form {
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 5px;
+  display: flex;
+}
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+.input-fields,
+.msg {
+  width: 48%;
+}
+.input-fields .input,
+.msg textarea {
+  margin: 10px 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #58a9a5;
+  padding: 10px;
+  color: #58a9a5;
+  width: 100%;
+  font-size: 18px;
+}
+
+.msg textarea {
+  height: 230px;
+}
+
+.btn {
+  background: #58a9a5;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+@media screen and (max-width: 800px) {
+  .contact-form {
+    flex-direction: column;
+  }
+  .msg textarea {
+    height: 80px;
+  }
+  .input-fields,
+  .msg {
+    width: 100%;
+  }
+}
